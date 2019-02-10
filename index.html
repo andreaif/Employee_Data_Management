@@ -1,0 +1,99 @@
+
+<html lang="en-us">
+	<head>
+  <title>Employee Database Management</title>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!--link to CSS-->
+ <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+<!-- Moment.js Reference -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+  <!--tittle-->
+	<div class="container" id="nav">
+        <div class="row">
+           <div class="col-md-12">
+                <h1>Employee Database Management</h1>
+           </div>
+      </div>
+  </div>
+
+	<br>
+<!--content-->
+<div class="container">
+	<div class="row">
+    	<div class="col">
+     <!--2nd table f]or current train Schedule-->
+
+      <div class="container-fill " id="current">
+            <div class="header">
+              Current Employee
+            </div>
+            <div class="card-body ">
+                <table class="table" id="currentTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Employee Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">Months Worked</th>
+                        <th scope="col">Monthly Rate ($)</th>
+                        <th scope="col">Total Billed($)</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody> <!--content-->
+                </table>
+            </div>
+          </div>
+    </div>
+  </div>
+            <br>
+            <!-- enter data-->
+      <div class="row">
+        <div class="col">
+			<form>
+			
+				<div class="form-group" id="add">
+                    <div class="header" >
+                                Add Employee
+                    </div>
+                    <!-- <label for="name">name</label> -->
+                    <label for="name" id="label">Employee Name</label>
+  					<input type="text" class="form-control col-sm-11" id="name">
+
+                    <!-- <label for="role">role</label> -->
+                    <label for="role" id="label">Role</label>
+  					<input type="text" class="form-control col-sm-11" id="role">
+			
+                    <!-- <label for="StartDate">startdate mm/dd/yy </label> -->
+                    <label for="start" id="label">Start Date (MM/DD/YYYY) </label>
+  					<input type="text" class="form-control col-sm-11" id="start">
+
+                      <!-- <label for="rate">Monthly Rate</label> -->
+                    <label for="rate" id="label">Monthly Rate</label>
+  					<input type="text" class="form-control col-sm-11" id="rate">
+  				
+  			 		<button class="btn btn-primary btn-lg" id="submitBtn" type="submit" style="margin: 2%">Submit</button>
+        </div>
+    
+      </form>
+        </div>  
+      </div>
+
+</div>
+	<!-- javascript -->
+	<script src="javascript.js"></script>
+</body>
+</html
